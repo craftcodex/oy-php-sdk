@@ -14,6 +14,7 @@ trait HasHeader
     public function headers($headers): static
     {
         $this->headers = $headers;
+
         return $this;
     }
 }

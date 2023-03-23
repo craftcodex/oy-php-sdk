@@ -9,6 +9,7 @@ trait HasEnvironment
     public function environment($environment): static
     {
         $this->environment = $environment;
+
         return $this;
     }
 

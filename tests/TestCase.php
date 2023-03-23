@@ -2,9 +2,9 @@
 
 namespace CraftCodex\OyPhpSdk\Tests;
 
+use CraftCodex\OyPhpSdk\OyPhpSdkServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CraftCodex\OyPhpSdk\OyPhpSdkServiceProvider;
 
 class TestCase extends Orchestra
 {
