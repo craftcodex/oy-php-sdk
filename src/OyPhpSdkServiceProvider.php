@@ -11,6 +11,6 @@ class OyPhpSdkServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('oy-php-sdk')
-            ->hasConfigFile();
+            ->hasConfigFile('oy');
     }
 }

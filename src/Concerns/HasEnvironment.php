@@ -4,7 +4,7 @@ namespace CraftCodex\OyPhpSdk\Concerns;
 
 trait HasEnvironment
 {
-    protected ?string $environment;
+    protected ?string $environment = null;
 
     public function environment($environment): static
     {
@@ -15,7 +15,7 @@ trait HasEnvironment
 
     public function getEnvironment(): string
     {
-        return $this->environment ?? config('oy-php-sdk.env', 'local');
+        return $this->environment ?: config('oy.env', 'local');
     }
 
     public function isProduction(): bool

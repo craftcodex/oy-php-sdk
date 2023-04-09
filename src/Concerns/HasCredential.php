@@ -11,10 +11,18 @@ trait HasCredential
         return $this;
     }
 
+    public function getUsername(){
+        return $this->username ?: config('oy.credential.username');
+    }
+
     public function apiKey($apiKey): static
     {
         $this->apiKey = $apiKey;
 
         return $this;
+    }
+
+    public function getApiKey(){
+        return $this->apiKey ?: config('oy.credential.key');
     }
 }
