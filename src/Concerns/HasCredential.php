@@ -11,7 +11,8 @@ trait HasCredential
         return $this;
     }
 
-    public function getUsername(){
+    public function getUsername()
+    {
         return $this->username ?: config('oy.credential.username');
     }
 
@@ -22,7 +23,8 @@ trait HasCredential
         return $this;
     }
 
-    public function getApiKey(){
+    public function getApiKey()
+    {
         return $this->apiKey ?: config('oy.credential.key');
     }
 }

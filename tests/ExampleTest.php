@@ -10,7 +10,7 @@ it('can get balance', function () {
         apiKey: '2f8441f0-5076-4088-a717-4d37c0c7805b'
     )->send()->json();
 
-    $this->assertEquals($response['status']['code'], "000");
+    $this->assertEquals($response['status']['code'], '000');
 });
 
 it('can remit balance', function () {
@@ -23,5 +23,5 @@ it('can remit balance', function () {
         ->send()
         ->json();
 
-    $this->assertEquals($response['status']['code'], "101");
+    $this->assertEquals($response['status']['code'], '101');
 });

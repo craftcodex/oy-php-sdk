@@ -6,7 +6,8 @@ trait HasData
 {
     protected array $data = [];
 
-    public function defaultData(){
+    public function defaultData()
+    {
         return [];
     }
 

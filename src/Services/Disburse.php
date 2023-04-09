@@ -7,15 +7,15 @@ use CraftCodex\OyPhpSdk\OyPhpSdk;
 
 class Disburse extends OyPhpSdk
 {
-    protected ?string $path = "remit";
+    protected ?string $path = 'remit';
 
     protected array $data = [
-        "recipient_bank" => "",
-        "recipient_account" => "",
-        "amount" => 10000,
-        "note" => "",
-        "partner_trx_id" => "",
-        "email" => "",
+        'recipient_bank' => '',
+        'recipient_account' => '',
+        'amount' => 10000,
+        'note' => '',
+        'partner_trx_id' => '',
+        'email' => '',
     ];
 
     protected string $method = Method::POST;
